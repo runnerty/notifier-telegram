@@ -4,12 +4,7 @@
   "definitions": {
     "config": {
       "type": "object",
-      "required": [
-        "id",
-        "type",
-        "token",
-        "chat_id"
-      ],
+      "required": ["id", "type", "token", "chat_id"],
       "properties": {
         "id": {
           "type": "string"
@@ -31,10 +26,7 @@
     },
     "params": {
       "type": "object",
-      "required": [
-        "id",
-        "message"
-      ],
+      "required": ["id", "message"],
       "properties": {
         "id": {
           "type": "string"
