@@ -19,7 +19,7 @@ npm i @runnerty/notifier-telegram
 ```
 
 ### Configuration sample:
-Add in [config.json]:
+Add it in the notification section of the [config.json] file. More information [here](https://docs.runnerty.io/notifiers):
 ```json
 {
   "id": "telegram_default",
@@ -28,13 +28,47 @@ Add in [config.json]:
   "chat_id": "ABC123"
 }
 ```
+Example:
+```json
+{
+  // ...
+  "notifiers": [
+    {
+      "id": "telegram_default",
+      "type": "@runnerty-notifier-telegram",
+      "token": "MyTokenId",
+      "chat_id": "MyChatId"
+    },
+    //...
+  ]
+}
+```
 
 ### Plan sample:
-Add in [plan.json]:
+Add add it to any [chain](https://docs.runnerty.io/chain) or [process](https://docs.runnerty.io/process) notification event. More information [here](https://docs.runnerty.io/notifiers):
 ```json
 {
   "id": "telegram_default",
   "message": "Process :PROCESS_ID Running!"
+}
+```
+Example:
+```json
+{
+  "id": "PROCESS_SAMPLE",
+  "name": "Sample process",
+  "exec": {
+    "id": "shell_default",
+    "command": "echo 'Hello world'"
+  },
+  "notifications": {
+    "on_end": [
+      {
+        "id": "telegram_default",
+        "message": "THE PROCESS HAS FINISHED"
+      }
+    ]
+  }
 }
 ```
 
@@ -45,4 +79,5 @@ Add in [plan.json]:
 [david-badge]: https://david-dm.org/runnerty/notifier-telegram.svg
 [david-badge-url]: https://david-dm.org/runnerty/notifier-telegram
 [config.json]: https://docs.runnerty.io/config/
+[notifiers]: https://docs.runnerty.io/notifiers
 [plan.json]: https://docs.runnerty.io/plan/
