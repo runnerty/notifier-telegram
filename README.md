@@ -49,7 +49,7 @@ Add add it to any [chain](https://docs.runnerty.io/chain) or [process](https://d
 ```json
 {
   "id": "telegram_default",
-  "message": "Process :PROCESS_ID Running!"
+  "message": "Process @GV(PROCESS_ID) Running!"
 }
 ```
 Example:
@@ -65,7 +65,7 @@ Example:
     "on_end": [
       {
         "id": "telegram_default",
-        "message": "THE PROCESS HAS FINISHED"
+        "message": "THE PROCESS @GV(PROCESS_ID) HAS FINISHED"
       }
     ]
   }

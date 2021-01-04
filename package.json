@@ -1,8 +1,8 @@
 {
   "name": "@runnerty/notifier-telegram",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Runnerty module: Telegram notifier",
-  "author": "Coderty",
+  "author": "Runnerty Tech",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -23,12 +23,13 @@
   },
   "homepage": "https://github.com/runnerty/notifier-telegram#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.50.0"
+    "node-telegram-bot-api": "0.51.0",
+    "@runnerty/module-core": "alpha"
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.2"
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1"
   }
 }

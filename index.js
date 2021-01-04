@@ -1,10 +1,10 @@
 'use strict';
 
 process.env.NTBA_FIX_319 = 1;
-const Notification = global.NotificationClass;
+const Notifier = require('@runnerty/module-core').Notifier;
 const TelegramBot = require('node-telegram-bot-api');
 
-class telegramNotifier extends Notification {
+class telegramNotifier extends Notifier {
   constructor(notification) {
     super(notification);
   }
