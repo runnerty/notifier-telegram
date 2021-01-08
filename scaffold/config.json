@@ -1,0 +1,10 @@
+{
+  "notifiers": [
+    {
+      "id": "telegram_default",
+      "type": "@runnerty-notifier-telegram",
+      "token": "ABC123",
+      "chat_id": "ABC123"
+    }
+  ]
+}
