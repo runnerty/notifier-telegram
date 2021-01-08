@@ -14,8 +14,24 @@
 # Telegram notifier for [Runnerty]:
 
 ### Installation:
+Through NPM
+
 ```bash
 npm i @runnerty/notifier-telegram
+```
+
+You can also add modules to your project with [runnerty-cli]
+
+```bash
+npx runnerty-cli add @runnerty/notifier-telegram
+```
+
+This command installs the module in your project, adds example configuration in your `config.json`.
+
+If you have installed [runnerty-cli] globally you can include the module with this command:
+
+```bash
+rty add @runnerty/notifier-telegram
 ```
 
 ### Configuration sample:
@@ -81,3 +97,4 @@ Example:
 [config.json]: https://docs.runnerty.io/config/
 [notifiers]: https://docs.runnerty.io/notifiers
 [plan.json]: https://docs.runnerty.io/plan/
+[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
