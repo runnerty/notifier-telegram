@@ -7,13 +7,13 @@
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency Status][david-badge]][david-badge-url]
 <a href="#badge">
-  <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
 </a>
-
 
 # Telegram notifier for [Runnerty]:
 
 ### Installation:
+
 Through NPM
 
 ```bash
@@ -35,7 +35,9 @@ rty add @runnerty/notifier-telegram
 ```
 
 ### Configuration sample:
+
 Add it in the notification section of the [config.json] file. More information [here](https://docs.runnerty.io/notifiers):
+
 ```json
 {
   "id": "telegram_default",
@@ -44,7 +46,9 @@ Add it in the notification section of the [config.json] file. More information [
   "chat_id": "ABC123"
 }
 ```
+
 Example:
+
 ```json
 {
   // ...
@@ -54,21 +58,25 @@ Example:
       "type": "@runnerty-notifier-telegram",
       "token": "MyTokenId",
       "chat_id": "MyChatId"
-    },
+    }
     //...
   ]
 }
 ```
 
 ### Plan sample:
+
 Add add it to any [chain](https://docs.runnerty.io/chain) or [process](https://docs.runnerty.io/process) notification event. More information [here](https://docs.runnerty.io/notifiers):
+
 ```json
 {
   "id": "telegram_default",
   "message": "Process @GV(PROCESS_ID) Running!"
 }
 ```
+
 Example:
+
 ```json
 {
   "id": "PROCESS_SAMPLE",
@@ -88,7 +96,7 @@ Example:
 }
 ```
 
-[Runnerty]: https://www.runnerty.io
+[runnerty]: https://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/notifier-telegram.svg
 [npm-url]: https://www.npmjs.com/package/@runnerty/notifier-telegram
 [npm-image]: https://img.shields.io/npm/v/@runnerty/notifier-telegram.svg
