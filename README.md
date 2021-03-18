@@ -75,7 +75,7 @@ Add add it to any [chain](https://docs.runnerty.io/chain) or [process](https://d
 }
 ```
 
-Example:
+Examples:
 
 ```json
 {
@@ -90,6 +90,28 @@ Example:
       {
         "id": "telegram_default",
         "message": "THE PROCESS @GV(PROCESS_ID) HAS FINISHED"
+      }
+    ]
+  }
+}
+```
+
+- Video:
+
+```json
+{
+  "id": "PROCESS_SAMPLE",
+  "name": "Sample process",
+  "exec": {
+    "id": "shell_default",
+    "command": "echo 'Hello world'"
+  },
+  "notifications": {
+    "on_end": [
+      {
+        "id": "telegram_default",
+        "message": "THE PROCESS @GV(PROCESS_ID) HAS FINISHED",
+        "video": "./my_video.mp4"
       }
     ]
   }

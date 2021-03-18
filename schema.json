@@ -33,6 +33,15 @@
         },
         "message": {
           "type": "string"
+        },
+        "photo": {
+          "type": "string"
+        },
+        "audio": {
+          "type": "string"
+        },
+        "video": {
+          "type": "string"
         }
       }
     }
