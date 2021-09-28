@@ -20,18 +20,18 @@ Through NPM
 npm i @runnerty/notifier-telegram
 ```
 
-You can also add modules to your project with [runnerty-cli]
+You can also add modules to your project with [runnerty]
 
 ```bash
-npx runnerty-cli add @runnerty/notifier-telegram
+npx runnerty add @runnerty/notifier-telegram
 ```
 
-This command installs the module in your project, adds example configuration in your `config.json`.
+This command installs the module in your project, adds example configuration in your [config.json] and creates an example plan of use.
 
-If you have installed [runnerty-cli] globally you can include the module with this command:
+If you have installed [runnerty] globally you can include the module with this command:
 
 ```bash
-rty add @runnerty/notifier-telegram
+runnerty add @runnerty/notifier-telegram
 ```
 
 ### Configuration sample:
@@ -127,4 +127,3 @@ Examples:
 [config.json]: https://docs.runnerty.io/config/
 [notifiers]: https://docs.runnerty.io/notifiers
 [plan.json]: https://docs.runnerty.io/plan/
-[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
