@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/notifier-telegram",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Runnerty module: Telegram notifier",
   "author": "Runnerty Tech",
   "license": "MIT",
